@@ -14,7 +14,8 @@ into table table_name
 fields terminated by ","
 enclosed by '"' 
 lines terminated by "\n"
-ignore 1 rows; -- to ignore the first row as it is the columns heads 
+ignore 1 rows; 
+-- to ignore the first row as it is the columns heads 
 
 -- identify the top 3 states with the highest shipping costs 
 select state, sum(shipping_cost) as total_cost 
